@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
   setUpPage();
 
@@ -15,14 +15,14 @@
 
     const nav = document.querySelector('nav');
 
-    const navClickHandler = function() {
+    const navClickHandler = function () {
       this.classList.toggle('open');
       event.stopPropagation();
     };
 
     nav.addEventListener('click', navClickHandler);
 
-    const bodyClickHandler = function() {
+    const bodyClickHandler = function () {
       nav.classList.remove('open');
     };
 
@@ -32,12 +32,12 @@
   // Product details can be expanded
   function addArticleEventListeners() {
 
-    const articles = document.querySelectorAll('#products article');
+    const articles = document.querySelectorAll('#projects article');
 
     for (let article of articles) {
       let button = article.querySelector('button');
 
-      button.addEventListener('click', function() {
+      button.addEventListener('click', function () {
         article.classList.toggle('expanded');
         button.innerHTML = article.classList.contains('expanded') ?
           'Hide Details' : 'Show Details';
@@ -49,19 +49,19 @@
   // Resizing the window resets nav visibility
   function addWindowEventListeners() {
 
-    const windowResizeHandler = function() {
+    const windowResizeHandler = function () {
 
       const nav = document.querySelector('nav');
       nav.classList.remove('open');
 
       const articles = document.querySelectorAll('#products article');
-      
+
       for (let article of articles) {
         article.classList.remove('expanded');
       }
     };
 
-    window.addEventListener('resize', windowResizeHandler); 
+    window.addEventListener('resize', windowResizeHandler);
   }
 
   // Modal can be opened
@@ -69,7 +69,7 @@
 
     const modalTriggerElement = document.querySelector('#modal-trigger');
 
-    const modalTriggerClickHandler = function() {
+    const modalTriggerClickHandler = function () {
       document.body.classList.add('modal-open');
     };
 
@@ -78,7 +78,7 @@
     // Modal can be closed
     const modalCloseButton = document.querySelector('#modal button');
 
-    const modalCloseButtonClickHandler = function() {
+    const modalCloseButtonClickHandler = function () {
       document.body.classList.remove('modal-open');
     };
 
@@ -108,7 +108,7 @@
     function displaySliderImage() {
       let { imageUrl, caption } = slides[sliderIndex];
       sliderFrame.style.backgroundImage = `url('${imageUrl}')`;
-      let count = `(${sliderIndex+1}/${slides.length}) `;
+      let count = `(${sliderIndex + 1}/${slides.length}) `;
       sliderCaption.innerHTML = count + caption;
       sliderCaption.classList.add('flash');
       setTimeout(() => {
@@ -135,7 +135,7 @@
     sliderPrev.addEventListener('click', displayPrevSliderImage);
     sliderNext.addEventListener('click', displayNextSliderImage);
 
-    setInterval(function() {
+    setInterval(function () {
       displayNextSliderImage();
     }, 4000);
   }
