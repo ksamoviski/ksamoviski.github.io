@@ -54,7 +54,7 @@
       const nav = document.querySelector('nav');
       nav.classList.remove('open');
 
-      const articles = document.querySelectorAll('#products article');
+      const articles = document.querySelectorAll('#projects article');
 
       for (let article of articles) {
         article.classList.remove('expanded');
@@ -124,6 +124,7 @@
       displaySliderImage();
     }
 
+    ....
     function displayNextSliderImage() {
       sliderIndex++;
       if (sliderIndex === slides.length) {

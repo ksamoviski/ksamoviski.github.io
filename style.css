@@ -46,7 +46,7 @@ header
   font-size: 3rem;
 }
 
-.title{
+.mainTitle{
   font-family: 'Josefin Slab';
   font-weight: 300;
   font-size: 3rem;
@@ -55,7 +55,7 @@ header
 #aboutMe
 {
  background-color: #ccc;
- padding: 3rem 0rem;
+ padding: 2rem 0rem;
 }
 
 .greeting{
@@ -79,7 +79,7 @@ header
 .profile{
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 80%;
 }
 
@@ -94,6 +94,13 @@ header
   max-width: 100%;
 }
 
+.title{
+  font-family: 'Josefin Slab';
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+}
+
 #projects{
   background-color: #fff;
   padding: 3rem 0rem;
@@ -101,8 +108,9 @@ header
 
 .projects__title{
   text-align: center;
-  margin: 2rem 0rem 2rem 0rem;
-}
+  font-family: "Josefin Slab";
+  font-size: 3rem;
+  font-weight: 500;}
 
 .projects{
   display: grid;
@@ -137,6 +145,16 @@ header
 .projects__description{
   font-size: .75rem;
   padding: .5rem;
+}
+
+#letsTalk{
+  background-color: #ccc;
+  padding: 3rem 0rem;
+}
+
+.contact{
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 
