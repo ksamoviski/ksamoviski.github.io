@@ -2,84 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Karin Samoviski Portfolio</title>
 
-    <title>Karin Samoviski Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./old.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <h1 id="header__logo">Karin Samoviski</h1>
-        <nav class="header__nav">
-            <ul class="header__nav_list">
-                <li class="header__nav_listItem"><a href="#">About</a></li>
-                <li class="header__nav_listItem"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Karin Samoviski</h1>
+    <span>Designer {Developer} Creative</span>
+  </header>
 
-    <div class="container">
+  <main>
 
-        <section class="profile">
-            <figure>
-                <img src="assets\karin.jpg" alt="trail profile" class="profile__image">
-            </figure>
-            <article class="profile__heading">
-                <h2>Hello.</h2>
-                <p>Say something about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                    dignissim feugiat libero, in iaculis quam posuere et. Nulla ultricies consequat lectus, ac pharetra
-                    dolor scelerisque id. Sed a semper arcu. Maecenas vestibulum, ante sed laoreet malesuada, felis
-                    metus maximus nisl, at blandit dolor massa vitae tellus. </p>
-            </article>
-        </section>
+    <section id="aboutUs">
+      <section class="profile">
+        <figure>
+          <img src="assets\karin.jpg" alt="trail profile" class="profile__image">
+        </figure>
+        <article class="profile__heading">
+          <h2>Hello.</h2>
+          <p>Say something about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            dignissim feugiat libero, in iaculis quam posuere et. Nulla ultricies consequat lectus, ac pharetra
+            dolor scelerisque id. Sed a semper arcu. Maecenas vestibulum, ante sed laoreet malesuada, felis
+            metus maximus nisl, at blandit dolor massa vitae tellus. </p>
 
-        <h2 class="projects__title">Current Projects</h2>
+          <p>
+            Learn more about <span id="modal-trigger" class="live">Our Mission</span>.
+          </p>
 
-        <section class="projects">
-            <article class="projects__column">
-                <h3 class="projects__column_title">Project 1</h3>
-                <figure class="projects__column_figure">
-                    <img src="assets\sunset.jpg" alt="rainbow" class="projects__column_image">
-                </figure>
-                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-                    repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
-                    quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
-            </article>
+        </article>
 
-            <article class="projects__column">
-                <h3 class="projects__column_title">Project 2</h3>
-                <figure class="projects__column_figure">
-                    <img src="assets\rainbow.JPG" alt="rainbow" class="projects__column_image">
-                </figure>
-                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-                    repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
-                    quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
-            </article>
+      </section>
+    </section>
 
-            <article class="projects__column">
-                <h3 class="projects__column_title">Project 3</h3>
-                <figure class="projects__column_figure">
-                    <img src="assets\archer.jpg" alt="rainbow" class="projects__column_image">
-                </figure>
-                <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-                    repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
-                    quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
-            </article>
-        </section>
+
+    <section id="ourProducts">
+      <h2 class="projects__title">Current Projects</h2>
+
+      <section class="projects">
+        <article class="projects__column">
+          <h3 class="projects__column_title">Project 1</h3>
+          <figure class="projects__column_figure">
+            <img src="assets\bab.jpg" alt="rainbow" class="projects__column_image">
+          </figure>
+          <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
+            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
+        </article>
+
+        <article class="projects__column">
+          <h3 class="projects__column_title">Project 2</h3>
+          <figure class="projects__column_figure">
+            <img src="assets\naturejournal.JPG" alt="rainbow" class="projects__column_image">
+          </figure>
+          <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
+            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
+        </article>
+
+        <article class="projects__column">
+          <h3 class="projects__column_title">Project 3</h3>
+          <figure class="projects__column_figure">
+            <img src="assets\skypond.jpg" alt="rainbow" class="projects__column_image">
+          </figure>
+          <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
+            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p>
+        </article>
+      </section>
+    </section>
+
+
+    <!-- <section id="specialEvents">
+      <h2>Special Events</h2>
+      <p>We regularly host socials and meetups to sharpen talent and foster connections. Join us!</p>
+
+      <div id="slider">
+        <div id="slider-frame">
+
+          <div id="slider-prev">PREV</div>
+          <div id="slider-next">NEXT</div>
+
+          <div id="slider-images">
+            <div data-src="./images/boot.jpg">
+              Let's boot up your new project.
+            </div>
+            <div data-src="./images/mouse.jpg">
+              You'll want to double-click this one.
+            </div>
+            <div data-src="./images/cookies.jpg">
+              Our cookies are super.
+            </div>
+          </div>
+
+        </div>
+        <div id="slider-caption">
+          The caption.
+        </div>
+      </div>
+
+    </section> -->
+
+    <section id="getInTouch">
+      <h2>Get in Touch</h2>
+      <p>We would be happy to discuss how our team can meet your needs!</p>
+      <ul>
+        <li>Email: sales@codebusiness.com</li>
+        <li>Phone: (555) 555-5555</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#aboutUs">About Us</a>
+    <a href="#ourProducts">Our Products</a>
+    <!-- <a href="#specialEvents">Special Events</a> -->
+    <a href="#getInTouch">Get in Touch</a>
+  </nav>
+
+  <!-- <footer>
+    <div>
+      &copy; 2018 Code Business
     </div>
+  </footer> -->
 
-    <footer class="footer">
-        <small class="footer__copyright">&copy;Karin Samoviski 2020</small>
-        <section class="footer__social">
-            <a href="https://github.com/ksamoviski" class="fa fa-github"></a>
-        </section>
-    </footer>
+  <div id="backdrop">
+    <div id="modal">
+      <button class="text-button">Close</button>
+      <h4>Code Business Mission Statement</h4>
+
+      <div id="modal-content">
+        <p>Code Business exists to make money. Also software.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 
 </body>
+
+<footer class="footer">
+  <small class="footer__copyright">&copy;Karin Samoviski 2020</small>
+  <div class="footer__social">
+    <a href="https://github.com/ksamoviski" class="fa fa-github"></a>
+  </div>
+</footer>
 
 </html>
