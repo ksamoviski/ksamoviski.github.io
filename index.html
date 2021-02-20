@@ -9,78 +9,89 @@
 
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="stylesheet" type="text/css" href="./old.css">
+  <link rel="stylesheet" type="text/css" href="./projects.css">
 </head>
 
 <body>
 
-  <header>
+  <section id="intro">
     <h1 id="name">Karin Samoviski</h1>
     <div class="mainTitle">Designer {Developer} Creative</div>
-  </header>
+  </section>
 
   <main>
 
     <section id="aboutMe">
       <section class="profile">
-        <figure>
+        <div>
           <img src="assets\karin.jpg" alt="trail profile" class="profile__image">
-        </figure>
-        <article class="profile__heading">
-          <h2 class="greeting">Hello.</h2>
+        </div>
 
-          <p class="opening">Say something about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <div class="profile__heading">
+          <h2 class="greeting">Hello.</h2>
+          <p class="opening">Say something about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
             Curabitur
-            dignissim feugiat libero, in iaculis quam posuere et. Nulla ultricies consequat lectus, ac pharetra
+            dignissim feugiat libero, in iaculis quam posuere et. Nulla ultricies consequat lectus, ac
+            pharetra
             dolor scelerisque id. Sed a semper arcu. Maecenas vestibulum, ante sed laoreet malesuada, felis
             metus maximus nisl, at blandit dolor massa vitae tellus. </p>
-
           <p class="link">
             Learn more about <span id="modal-trigger" class="live">my work experience</span>.
           </p>
-
-        </article>
-
+        </div>
       </section>
     </section>
 
 
     <section id="projects">
-
       <h2 class="title">Projects</h2>
-
       <section class="projects">
-        <article class="projects__column">
+
+        <!-- <div class="projects__column"> -->
+        <div class="single__project">
+
           <!-- <h3 class="projects__column_title">Project 1</h3> -->
-          <figure class="projects__column_figure">
-            <img src="assets\bab.jpg" alt="rainbow" class="projects__column_image">
-          </figure>
-          <!-- <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
-            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p> -->
-        </article>
 
-        <article class="projects__column">
-          <!-- <h3 class="projects__column_title">Project 2</h3> -->
-          <figure class="projects__column_figure">
-            <img src="assets\naturejournal.JPG" alt="rainbow" class="projects__column_image">
-          </figure>
-          <!-- <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
-            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p> -->
-        </article>
+          <!-- <div class="projects__column_figure"> -->
 
-        <article class="projects__column">
-          <!-- <h3 class="projects__column_title">Project 3</h3> -->
-          <figure class="projects__column_figure">
-            <img src="assets\skypond.jpg" alt="rainbow" class="projects__column_image">
-          </figure>
-          <!-- <p class="projects__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          <div class="project__container">
+
+            <img src="assets\bab.jpg" alt="rainbow" class="project__image">
+          </div>
+
+          <!-- <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
             repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
             quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p> -->
-        </article>
+        </div>
+
+        <div class="single__project">
+
+          <div class="project__container">
+
+            <img src="assets\bab.jpg" alt="rainbow" class="project__image">
+          </div>
+
+          <!-- <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
+            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p> -->
+        </div>
+
+
+        <div class="single__project">
+
+          <div class="project__container">
+
+            <img src="assets\bab.jpg" alt="rainbow" class="project__image">
+          </div>
+
+          <!-- <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            repellendus ducimus adipisci,officiis beatae veritatis neque cumque exercitationem ipsum doloremque
+            quaerat provident eaque, ratione dignissimos saepe error deleniti ea.</p> -->
+        </div>
+
       </section>
     </section>
-
 
 
 
@@ -102,15 +113,10 @@
     <a href="#">Home</a>
     <a href="#aboutMe">About Me</a>
     <a href="#projects">Projects</a>
-    <!-- <a href="#specialEvents">Special Events</a> -->
     <a href="#letsTalk">Let's Talk</a>
   </nav>
 
-  <!-- <footer>
-    <div>
-      &copy; 2018 Code Business
-    </div>
-  </footer> -->
+
 
   <div id="backdrop">
     <div id="modal">
@@ -129,11 +135,5 @@
 
 </body>
 
-<!-- <footer class="footer">
-  <small class="footer__copyright">&copy;Karin Samoviski 2020</small>
-  <div class="footer__social">
-    <a href="https://github.com/ksamoviski" class="fa fa-github"></a>
-  </div>
-</footer> -->
 
 </html>
