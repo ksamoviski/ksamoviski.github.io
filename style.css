@@ -113,28 +113,6 @@ html{
   text-align: center;
 }
 
-.project__container:hover .project__image {
-  opacity: 0.2;
-  transition: .75s;
-}
-
-/* .project__container:hover .overlay {
-  opacity: 1;
-  transition: .75s;
-}
-
-.overlay {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
-
-
 .single__project{
   padding-top:1rem;
 }
