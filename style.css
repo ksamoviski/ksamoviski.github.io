@@ -118,7 +118,7 @@ html{
   transition: .75s;
 }
 
-.project__container:hover .overlay {
+/* .project__container:hover .overlay {
   opacity: 1;
   transition: .75s;
 }
@@ -132,7 +132,7 @@ html{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 
 
 .single__project{
@@ -242,24 +242,28 @@ span.live:hover {
 
 #modal {
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 5px #333;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 5px 5px #333; */
   height: 80vh;
-  padding: 1em;
+  padding: 1rem 1rem 1rem 3rem;
   width: 80vw;
+  opacity: .8;
 }
 
-#modal h4 {
+.resume {
   float: left;
+  margin-top: 3rem;
 }
 
 #modal button {
   background: #eee;
   border: 0;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   cursor: pointer;
   float: right;
-  padding: 5px 10px;
+  padding: 1rem;
+  font-family: 'Josefin Slab';
+  font-size: 1.25rem;
 }
 
 #modal button:hover {
