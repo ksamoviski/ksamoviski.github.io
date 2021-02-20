@@ -23,7 +23,7 @@ html{
     font-family: 'Lato', sans-serif;
 }
 
-body.modal-open {
+.modal-open {
   /* hide scrolling when modal open */
   overflow: hidden;
 }
@@ -445,13 +445,12 @@ span.live:hover {
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.7);
-
   display: none;
   align-items: center;
   justify-content: center;
 }
 
-.modal-open #backdrop {
+  .modal #backdrop {
   display: flex;
 }
 
@@ -470,7 +469,6 @@ span.live:hover {
 
 #modal button {
   float: right;
-
   background: #eee;
   padding: 5px 10px;
   border: 0;
