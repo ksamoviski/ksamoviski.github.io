@@ -4,8 +4,6 @@ const plusButton = document.getElementById('plus');
 const minusButton = document.getElementById('minus');
 
 const slides = Array.from(document.querySelectorAll('.project__image'));
-console.log(slides);
-
 
 for (let i = 0; i < slides.length; i++) {
     slides[i].src = imagesSources[i];

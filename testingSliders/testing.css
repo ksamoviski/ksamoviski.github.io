@@ -1,0 +1,31 @@
+
+body {
+    display: grid;
+    
+
+}
+
+
+#redBox {
+    position:absolute;
+    background-color: red;
+    width: 50px;
+    left: 45%;
+
+}
+
+#blueBox {
+    position:absolute;
+    background-color: blue;
+    width: 50px;
+    left: 50%;
+
+}
+
+#greenBox {
+    position:absolute;
+    background-color: green;
+    width: 50px;
+    left: 55%;
+
+}
