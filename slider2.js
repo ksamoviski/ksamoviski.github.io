@@ -17,17 +17,17 @@ for (let i = 0; i < slides.length; i++) {
 
 project1 = {
     container : project1Div,
-    placement : 3
+    placement : 0
 }
 
 project2 = {
     container : project2Div,
-    placement : 36
+    placement : 35
 }
 
 project3 = {
     container : project3Div,
-    placement : 69
+    placement : 70
 }
 
 const projectsList = [project1, project2, project3];
