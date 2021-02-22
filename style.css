@@ -106,7 +106,7 @@ html{
   border-top: .125rem solid #ccc;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 2rem;
   margin: 0 auto;
   max-width: 80%;
 }
@@ -133,6 +133,7 @@ html{
 }
 
 /* Start Carosuel Styling */
+
 .carousel__buttons{
   display: flex;
   justify-content: space-between;
@@ -141,9 +142,18 @@ html{
   position: absolute;
   top: 50%;
   left: 7%;
-
-
 }
+
+/* .carousel__buttons_bar{
+  background-color: #;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 86%;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+} */
 
 
 .arrow-left {
