@@ -102,15 +102,12 @@ html{
 
 .projects{
   border-top: .125rem solid #ccc;
-
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  justify-content: space-around; */
-
   margin: 0 auto;
-  /* max-width: 80%; */
+  
 }
+
 
 .project__container{
   text-align: center;

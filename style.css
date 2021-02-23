@@ -104,9 +104,13 @@ html{
 
 .projects{
   border-top: .125rem solid #ccc;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-column-gap: 2rem;  */
+
+
+  display: flex;
+
   margin: 0 auto;
   max-width: 80%;
 }
@@ -117,6 +121,7 @@ html{
 
 .single__project{
   padding-top:1rem;
+  margin: 1rem;
 }
 
 .project__image{
@@ -131,6 +136,23 @@ html{
   color: #000;
   background-color:#09f;
 }
+
+#project1 {
+  position: relative;
+  
+}
+
+#project2 {
+  position: relative;
+  
+}
+
+#project3 {
+  position: relative;
+  
+}
+
+
 
 /* Start Carosuel Styling */
 

@@ -1,7 +1,12 @@
+
+const project1Div = document.getElementById('project1');
+const project2Div = document.getElementById('project2');
+const project3Div = document.getElementById('project3');
+
 let imagesSources = ["assets/bab.jpg", "assets/skypond.jpg", "assets/naturejournal.jpg"];
 
-const plusButton = document.getElementById('plus');
-const minusButton = document.getElementById('minus');
+const arrowRight = document.getElementById('arrow-right');
+const arrowLeft = document.getElementById('arrow-left');
 
 const slides = Array.from(document.querySelectorAll('.project__image'));
 
@@ -9,45 +14,58 @@ for (let i = 0; i < slides.length; i++) {
     slides[i].src = imagesSources[i];
 }
 
-const resetSlides = () => {
-    for (let i = 0; i < imagesSources.length; i++) {
-        imagesSources[i] = slides[i].src;
-    }
+
+project1 = {
+    container : project1Div,
+    placement : 0
 }
 
-const advanceSlides = () => {
-    for (let i = 0; i < imagesSources.length; i++) {
-        if (i === 0) {
-            slides[imagesSources.length - 1].src = imagesSources[i];
-        } else {
-            slides[i - 1].src = imagesSources[i];
+project2 = {
+    container : project2Div,
+    placement : 0
+}
+
+project3 = {
+    container : project3Div,
+    placement : 0
+}
+
+const projectsList = [project1, project2, project3];
+
+const advance = () => {
+
+    projectsList.forEach(project=> {
+        project.placement += 5;
+        project.container.style.left = project.placement + "%";
+        
+    
+        if (project.placement > 75) {
+            project.container.style.left = 5 + "%";
+            project.placement = 5;
+            console.log(project.placement);
+
         }
-    }
-    resetSlides();
+    
+
+    })
 }
 
-const slideBackwards = () => {
-    let k = imagesSources.length - 1;
-    for (let i = k; i >= 0; i--) {
-        if (i === k) {
-            slides[0].src = imagesSources[k];
-        } else {
-            slides[i + 1].src = imagesSources[i];
+const retreat = () => {
+
+    projectsList.forEach(project=> {
+        project.placement -= 5;
+        project.container.style.left = project.placement + "%";
+        
+    
+        if (project.placement < -5) {
+            project.container.style.left = 95 + "%";
+            project.placement = 95;
+            console.log(project.placement);
         }
-    }
-    resetSlides();
+    
+    })
 }
 
 
-
-    plusButton.addEventListener('click', advanceSlides);
-    minusButton.addEventListener('click', slideBackwards);
-
-
-
-
-
-
-
-
-
+arrowRight.addEventListener('click', advance);
+arrowLeft.addEventListener('click', retreat);
