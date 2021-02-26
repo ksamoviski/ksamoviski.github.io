@@ -107,15 +107,15 @@ html{
 } */
 
 .projects{
-  border-top: .125rem solid #ccc;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem; */
+  border-top: .125rem solid #ccc;
 
   position: relative;
   display: flex;
   margin: 0 auto;
-  max-width: 5000px;
+  width: 5000px;
   transition: 2s ease;
 }
 
