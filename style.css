@@ -107,13 +107,11 @@ html{
 } */
 
 .projects{
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2rem; */
   border-top: .125rem solid #ccc;
-
   position: relative;
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 0 auto;
   width: 5000px;
   transition: 2s ease;
@@ -127,7 +125,7 @@ html{
 
 .single__project{
   padding-top:1rem;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 .project__image{
