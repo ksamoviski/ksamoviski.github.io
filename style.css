@@ -179,7 +179,7 @@ html{
   left: 5%;
   border-bottom: 3rem solid transparent;
   border-top: 3rem solid transparent;
-  border-right: 1.5rem solid darkGrey;
+  border-right: 1.5rem solid #ccc;
 }
 
 
@@ -189,7 +189,7 @@ html{
   top: 40%;
   right: 5%;
   border-bottom: 3rem solid transparent;
-  border-left: 1.5rem solid darkGrey;
+  border-left: 1.5rem solid #ccc;
   border-top: 3rem solid transparent;
 }
 
