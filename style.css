@@ -68,6 +68,7 @@ html{
 
 .profile__image{
   max-width: 100%;
+  
 }
 
 .title{
@@ -116,21 +117,7 @@ html{
   transition: 2s ease;
 }
 
-/* .project__container{
-  text-align: center;
-  /* width: 400px; */
-/* } */
 
-/* .single__project{
-  padding-top:1rem; */
-  /* margin: 1rem; */
-/* }  */
-
-/* .project__image{
-  text-align: center;
-  height: auto;
-  max-width: 100%;
-} */
 
 .project__description{
   font-size: .75rem;
@@ -162,7 +149,7 @@ html{
   left: 7%;
 } */
 
-#testingDivForButtons {
+#carouselButtons {
   position: relative;
   
 }
@@ -312,6 +299,15 @@ span.live:hover {
 #modal #modal-content {
   clear: both;
   padding-top: 1em;
+}
+
+#clickedProjectContainer {
+  height: 40vh;
+}
+
+
+.hidden {
+  display: none;
 }
 
 

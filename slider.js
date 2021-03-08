@@ -1,10 +1,20 @@
 const carousel = document.querySelector('.projects')
 const arrowRight = document.getElementById('arrow-right');
 const arrowLeft = document.getElementById('arrow-left');
-
+const clickedProjectContainer = document.getElementById('clickedProjectContainer');
 
 let imagesSources = ["assets/bab.jpg", "assets/skypond.jpg", "assets/naturejournal.jpg",
 "assets/berlin2019smaller.JPG", "assets/bryce2018smaller.JPG", "assets/grace2019smaller.JPG"];
+
+
+const openProjectStuff = (i) => {
+    clickedProjectContainer.removeChild(clickedProjectContainer.firstChild);
+    clickedProjectContainer.classList.remove('hidden');
+    let justClicked = document.createElement('h1');
+    justClicked.innerText = "Hello, I will show you super-cool project number " + (i + 1);
+    clickedProjectContainer.appendChild(justClicked);
+
+}
 
 
 
@@ -15,12 +25,26 @@ for (let i = 0; i < imagesSources.length; i++) {
 
     outerProjectDiv.class = "single__project";
     outerProjectDiv.style.margin = "1vw";
+    
+    outerProjectDiv.addEventListener('mouseover', ()=> {
+        outerProjectDiv.style.opacity = "0.4";
+    });
+
+    outerProjectDiv.addEventListener('mouseout', ()=> {
+        outerProjectDiv.style.opacity = "1.0";
+    })
+
+    outerProjectDiv.addEventListener('click', ()=> {
+        openProjectStuff(i);
+    })
 
     innerProjectDiv.class = "project__container";
 
     image.class = "project__image";
     image.src = imagesSources[i];
     image.style.width = "25vw";
+    
+   
 
     innerProjectDiv.appendChild(image);
     outerProjectDiv.appendChild(innerProjectDiv);
