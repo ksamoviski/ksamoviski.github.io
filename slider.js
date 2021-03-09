@@ -44,8 +44,6 @@ for (let i = 0; i < imagesSources.length; i++) {
     image.src = imagesSources[i];
     image.style.width = "25vw";
     
-   
-
     innerProjectDiv.appendChild(image);
     outerProjectDiv.appendChild(innerProjectDiv);
     carousel.appendChild(outerProjectDiv);
