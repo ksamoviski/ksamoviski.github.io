@@ -3,8 +3,22 @@ const arrowRight = document.getElementById('arrow-right');
 const arrowLeft = document.getElementById('arrow-left');
 const clickedProjectContainer = document.getElementById('clickedProjectContainer');
 
+
 let imagesSources = ["assets/bab.jpg", "assets/skypond.jpg", "assets/naturejournal.jpg",
 "assets/berlin2019smaller.JPG", "assets/bryce2018smaller.JPG", "assets/grace2019smaller.JPG"];
+
+
+const setHeight = (i) => {
+    clickedProjectContainer.style.height = i + "vh";
+}
+
+
+const scrollOpenProjectContainer = () => {
+    for (let i = 0; i < 40; i++) {
+        setTimeout(setHeight, i * 20, i);
+    }
+}
+
 
 
 const openProjectStuff = (i) => {
@@ -13,7 +27,7 @@ const openProjectStuff = (i) => {
     let justClicked = document.createElement('h1');
     justClicked.innerText = "Hello, I will show you super-cool project number " + (i + 1);
     clickedProjectContainer.appendChild(justClicked);
-
+    scrollOpenProjectContainer();
 }
 
 
