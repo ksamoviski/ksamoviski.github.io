@@ -112,7 +112,8 @@ html{
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 1%;
   width: 5000px;
   transition: 2s ease;
 }

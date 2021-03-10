@@ -65,7 +65,7 @@ for (let i = 0; i < imagesSources.length; i++) {
 
 
 const forward = () => {
-    carousel.style.left = "-102%";
+    carousel.style.left = "-106%";
 }
 
 const backward = () => {
