@@ -276,7 +276,6 @@ span.live:hover {
 }
 
 
-
 #backdrop{
   align-items: center;
   background: rgba(0,0,0,0.7);
@@ -289,13 +288,18 @@ span.live:hover {
   width: 100vw;
 }
 
-  .modal #backdrop
-{
+  .modal #backdrop {
   display: flex;
 }
 
 #modal {
-
+  background: #fff;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 5px 5px #333; */
+  height: 80vh;
+  padding: 1rem 1rem 1rem 3rem;
+  width: 80vw;
+  opacity: .8;
 }
 
 .resume {
