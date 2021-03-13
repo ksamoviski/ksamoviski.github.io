@@ -152,6 +152,10 @@ html{
   cursor: pointer;
 }
 
+.nav button:focus {
+  outline: none;
+}
+
 .nav .prev {
   left: -30px;
   display: none;
