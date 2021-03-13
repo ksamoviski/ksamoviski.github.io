@@ -275,7 +275,9 @@ span.live:hover {
   overflow: hidden;
 }
 
-#backdrop {
+
+
+#backdrop{
   align-items: center;
   background: rgba(0,0,0,0.7);
   display: none;
@@ -287,18 +289,13 @@ span.live:hover {
   width: 100vw;
 }
 
-  .modal #backdrop {
+  .modal #backdrop
+{
   display: flex;
 }
 
 #modal {
-  background: #fff;
-  /* border-radius: 5px; */
-  /* box-shadow: 0 0 5px 5px #333; */
-  height: 80vh;
-  padding: 1rem 1rem 1rem 3rem;
-  width: 80vw;
-  opacity: .8;
+
 }
 
 .resume {
@@ -309,7 +306,6 @@ span.live:hover {
 #modal button {
   background: #eee;
   border: 0;
-  /* border-radius: 3px; */
   cursor: pointer;
   float: right;
   padding: 1rem;
